@@ -1,10 +1,11 @@
-# Cronity - simple GUI cron jobs manager app based on Zenity - no browser needed!
-
+# Cronity
 <p align="center">
   <a href="https://github.com/satriyaadhip/Cronity">
     <img src="icon.png" width="256" alt="Cronity Icon">
   </a>
 </p>
+
+## A simple GUI cron jobs manager app based on Zenity - no browser needed!
 
 ## Features
 
@@ -180,15 +181,10 @@ Contributions are welcome! Please feel free to submit a Pull Request on [GitHub]
 - [Journal Viewer](https://github.com/satriyaadhip/journalviewer) - GUI for journalctl
 - [Aria2 Manager](https://github.com/satriyaadhip/aria2manager) - GUI for remote downloads
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - Inspired by [Vantage](https://github.com/niizam/vantage) - Lenovo Vantage for Linux
 - Built with [Zenity](https://help.gnome.org/users/zenity/)
-- Icon from [Font Awesome](https://fontawesome.com/)
 
 ## Author
 

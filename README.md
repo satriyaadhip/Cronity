@@ -1,7 +1,7 @@
 # Cronity
 <p align="left">
   <a href="https://github.com/satriyaadhip/Cronity">
-    <img src="icon.png" width="256" alt="Cronity Icon">
+    <img src="icon.png" width="192" alt="Cronity Icon">
   </a>
 </p>
 

@@ -2,7 +2,7 @@
 
 A simple GUI application for managing cron jobs in Linux, built with Bash and Zenity.
 
-![Cron Manager](screenshot.png)
+![Cron Manager](icon.png)
 
 ## Features
 

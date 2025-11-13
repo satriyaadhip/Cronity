@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
 Encoding=UTF-8
-Name=Cron Manager
+Name=Cronity
 Comment=A simple GUI application for managing cron jobs in Linux.
-Exec=/usr/bin/cronmanager %f
-Icon=/usr/share/icons/hicolor/scalable/apps/cronmanager.png
+Exec=/usr/bin/cronity %f
+Icon=/usr/share/icons/hicolor/scalable/apps/cronity.png
 Terminal=False

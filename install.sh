@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Cron Manager - Installation Script
+# Cronity - Installation Script
 # Auto-detects distro and installs dependencies
 
 # Function to detect package manager
@@ -28,7 +28,7 @@ if [ -f /etc/os-release ]; then
     fi
 fi
 
-echo "Cron Manager - Dependency Installation"
+echo "Cronity - Dependency Installation"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo ""
 

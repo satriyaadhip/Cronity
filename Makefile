@@ -1,7 +1,7 @@
 .PHONY: install uninstall check help
 
 help:
-	@echo "Cron Manager - Installation Commands"
+	@echo "Cronity - Installation Commands"
 	@echo ""
 	@echo "Usage:"
 	@echo "  make install     - Install Cron Manager to system"
@@ -13,26 +13,26 @@ help:
 install:
 	chmod +x ./install.sh
 	./install.sh
-	cp ./icon.png /usr/share/icons/hicolor/scalable/apps/cronmanager.png
-	cp ./cronmanager.desktop /usr/share/applications/cronmanager.desktop
-	cp ./cronmanager.sh /usr/bin/cronmanager
-	chmod a+rx /usr/bin/cronmanager
+	cp ./icon.png /usr/share/icons/hicolor/scalable/apps/cronity.png
+	cp ./cronity.desktop /usr/share/applications/cronity.desktop
+	cp ./cronity.sh /usr/bin/cronity
+	chmod a+rx /usr/bin/cronity
 	@echo ""
 	@echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 	@echo "✓ Installation complete!"
 	@echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-	@echo "Run 'cronmanager' from terminal"
+	@echo "Run 'cronity' from terminal"
 	@echo "or find it in your applications menu"
 	@echo ""
 
 uninstall:
-	rm -f /usr/share/applications/cronmanager.desktop
-	rm -f /usr/bin/cronmanager
+	rm -f /usr/share/applications/cronity.desktop
+	rm -f /usr/bin/cronity
 	@echo ""
 	@echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 	@echo "✓ Uninstallation complete!"
 	@echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-	@echo "Note: Backup files in ~/.config/cronmanager/"
+	@echo "Note: Backup files in ~/.config/cronity/"
 	@echo "      are not removed"
 	@echo ""
 
@@ -41,13 +41,13 @@ check:
 	@echo ""
 	@echo "Installation Status:"
 	@echo "━━━━━━━━━━━━━━━━━━━━"
-	@if [ -f /usr/bin/cronmanager ]; then \
-		echo "✓ Script: Installed at /usr/bin/cronmanager"; \
+	@if [ -f /usr/bin/cronity ]; then \
+		echo "✓ Script: Installed at /usr/bin/cronity"; \
 	else \
 		echo "✗ Script: Not installed"; \
 	fi
 	@echo ""
-	@if [ -f /usr/share/applications/cronmanager.desktop ]; then \
+	@if [ -f /usr/share/applications/cronity.desktop ]; then \
 		echo "✓ Desktop entry: Installed"; \
 	else \
 		echo "✗ Desktop entry: Not installed"; \

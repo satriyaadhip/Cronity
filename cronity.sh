@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Cron Manager - GUI for managing cron jobs using Zenity
+# Cronity - GUI for managing cron jobs using Zenity
 # Dependency: zenity, cron
 
 VERSION="1.0.0"
 TEMP_CRON="/tmp/crontab_temp.txt"
-BACKUP_DIR="$HOME/.config/cronmanager/backups"
+BACKUP_DIR="$HOME/.config/cronity/backups"
 
 # Create backup directory if it doesn't exist
 mkdir -p "$BACKUP_DIR"
@@ -68,7 +68,7 @@ show_cron_list() {
 
     if [ -z "$jobs" ]; then
         zenity --info \
-            --title="Cron Manager" \
+            --title="Cronity" \
             --text="No cron jobs found." \
             --width=300
         return
@@ -96,7 +96,7 @@ show_cron_list() {
 
     # Display with zenity
     local selection=$(echo -e "$list_data" | zenity --list \
-        --title="Cron Manager - Cron Jobs List" \
+        --title="Cronity - Cron Jobs List" \
         --text="Select a cron job to edit/delete:" \
         --column="No" \
         --column="Schedule" \
@@ -352,8 +352,8 @@ view_raw() {
 # Function for about
 show_about() {
     zenity --info \
-        --title="About Cron Manager" \
-        --text="<b>Cron Manager v${VERSION}</b>\n\nGUI for managing cron jobs in Linux\n\nBuilt with Bash + Zenity\n\nBackup location: $BACKUP_DIR" \
+        --title="About Cronity" \
+        --text="<b>Cronity v${VERSION}</b>\n\nGUI for managing cron jobs in Linux\n\nBuilt with Bash + Zenity\n\nBackup location: $BACKUP_DIR" \
         --width=400
 }
 
@@ -361,7 +361,7 @@ show_about() {
 main_menu() {
     while true; do
         local choice=$(zenity --list \
-            --title="Cron Manager v${VERSION}" \
+            --title="Cronity v${VERSION}" \
             --text="Select an action:" \
             --column="Action" \
             "📋 View Cron Jobs" \

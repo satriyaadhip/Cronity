@@ -1,6 +1,10 @@
 # Cronity - simple GUI cron jobs manager app based on Zenity - no browser needed!
 
-![Cron Manager](screenshot.png)
+<p align="center">
+  <a href="https://github.com/satriyaadhip/Cronity">
+    <img src="icon.png" width="256" alt="Cronity Icon">
+  </a>
+</p>
 
 ## Features
 

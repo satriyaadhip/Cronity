@@ -1,8 +1,6 @@
-# Cron Manager
+# Cronity - simple GUI cron jobs manager app based on Zenity - no browser needed!
 
-A simple GUI application for managing cron jobs in Linux, built with Bash and Zenity.
-
-![Cron Manager](icon.png)
+![Cron Manager](screenshot.png)
 
 ## Features
 
@@ -35,8 +33,8 @@ The installation script will automatically detect your distro and install these 
 ### Quick install (Recommended)
 
 ```bash
-git clone https://github.com/yourusername/cronmanager.git
-cd cronmanager
+git clone https://github.com/satriyaadhip/Cronity.git
+cd Cronity
 sudo make install
 ```
 
@@ -44,7 +42,7 @@ The installation script will:
 1. Auto-detect your Linux distribution
 2. Install required dependencies (zenity, cron)
 3. Enable and start cron service
-4. Copy script to `/usr/bin/cronmanager`
+4. Copy script to `/usr/bin/cronity`
 5. Install desktop entry
 
 ### Manual installation
@@ -58,25 +56,25 @@ If automatic installation fails:
 # For Fedora: sudo dnf install zenity cronie
 
 # Make script executable
-chmod +x cronmanager.sh
+chmod +x cronity.sh
 
 # Copy to system bin
-sudo cp cronmanager.sh /usr/bin/cronmanager
-sudo chmod a+rx /usr/bin/cronmanager
+sudo cp cronity.sh /usr/bin/cronity
+sudo chmod a+rx /usr/bin/cronity
 
 # Install desktop entry
-sudo cp cronmanager.desktop /usr/share/applications/
+sudo cp cronity.desktop /usr/share/applications/
 ```
 
 ## Usage
 
 ### From terminal
 ```bash
-cronmanager
+cronity
 ```
 
 ### From application menu
-Search for "Cron Manager" in your applications menu
+Search for "Cronity" in your applications menu
 
 ## Makefile commands
 
@@ -90,9 +88,9 @@ make help         # Show help
 
 ## File locations
 
-- **Binary:** `/usr/local/bin/cronmanager`
-- **Desktop entry:** `/usr/local/share/applications/cronmanager.desktop`
-- **Backups:** `~/.config/cronmanager/backups/`
+- **Binary:** `/usr/bin/cronity`
+- **Desktop entry:** `/usr/share/applications/cronity.desktop`
+- **Backups:** `~/.config/cronity/backups/`
 
 ## Screenshots
 
@@ -128,8 +126,8 @@ make help         # Show help
 
 ## Backup System
 
-Cron Manager automatically creates backups before any modifications:
-- Backups are stored in `~/.config/cronmanager/backups/`
+Cronity automatically creates backups before any modifications:
+- Backups are stored in `~/.config/cronity/backups/`
 - Backup files are named with timestamp: `crontab_YYYYMMDD_HHMMSS.txt`
 - Use "💾 Restore Backup" to restore previous versions
 
@@ -151,9 +149,49 @@ sudo systemctl enable --now cron
 ### Permission denied
 ```bash
 # Make script executable
-chmod +x cronmanager.sh
+chmod +x cronity.sh
 
 # Or reinstall
 sudo make uninstall
 sudo make install
 ```
+
+### GUI doesn't open
+Make sure you're running on a system with a desktop environment (GNOME, KDE, XFCE, etc.)
+
+## Tips
+
+- Use **Quick Add presets** for common schedules
+- All changes are automatically backed up
+- Check `~/.config/cronity/backups/` for backup history
+- Use **View Raw Crontab** to see the actual crontab syntax
+- Environment variables in cron may differ from your shell - use full paths
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request on [GitHub](https://github.com/satriyaadhip/Cronity).
+
+## Related Projects
+
+- [Journal Viewer](https://github.com/satriyaadhip/journalviewer) - GUI for journalctl
+- [Aria2 Manager](https://github.com/satriyaadhip/aria2manager) - GUI for remote downloads
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Inspired by [Vantage](https://github.com/niizam/vantage) - Lenovo Vantage for Linux
+- Built with [Zenity](https://help.gnome.org/users/zenity/)
+- Icon from [Font Awesome](https://fontawesome.com/)
+
+## Author
+
+Satriya Adhi Pradana - [@satriyaadhip](https://github.com/satriyaadhip)
+
+## Support
+
+If you like this project, please give it a ⭐ on GitHub!
+
+For issues and feature requests, please use the [GitHub Issues](https://github.com/satriyaadhip/Cronity/issues) page.
